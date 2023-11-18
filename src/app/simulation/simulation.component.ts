@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './simulation.component.css'
 })
 export class SimulationComponent {
-
+  tableauObjects = [
+    { "name": "Note CC EC1"},
+    { "name": "Note CC EC2"},
+    { "name": "Note CC EC3"}
+  ];
 }
