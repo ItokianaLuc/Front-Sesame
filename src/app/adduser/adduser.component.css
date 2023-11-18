@@ -1,0 +1,39 @@
+.title{
+    position: absolute;
+    top: 40px;
+    right: 42%;  
+    color: #CB2C30;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Creepster', cursive;
+}
+
+.add-container .login-form {
+  width: 500px;
+  height: 630px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 30px;
+  right: 34%;
+  box-shadow: 5px 5px 20px #383838;
+}
+
+.add-container .login-form .form-group {
+  margin-top: 5px;
+}
+
+.add-container .login-form label {
+  font-size: 12px;
+}
+
+.add-container .login-form .btn-container {
+  position: relative;
+  left: 85%;
+}
+
+.add-container .login-form .btn-container .btn {
+  margin-top: 30px;
+  background-color: #43B02A;
+}
