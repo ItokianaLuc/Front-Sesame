@@ -5,6 +5,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
 import { AddsesamienComponent } from './addsesamien/addsesamien.component';
 import { AdduserComponent } from './adduser/adduser.component';
+import { SimulationComponent } from './simulation/simulation.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
  {path:'home', component:HomepageComponent},
  {path:'addsesamien',component: AddsesamienComponent},
  {path:'adduser',component:AdduserComponent},
+ {path:'simulation',component: SimulationComponent},
  { path: 'ues', loadChildren: () => import('./ues/ues.module').then(m => m.UesModule) },
  { path: 'ec', loadChildren: () => import('./ec/ec.module').then(m => m.EcModule) },
  {path:'**',component: NotfoundPageComponent}
