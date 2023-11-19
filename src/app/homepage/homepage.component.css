@@ -1,0 +1,76 @@
+ .btn {
+    margin-top: 10px;
+    background-color: #43B02A;
+    width: 150px;
+    height: 50px;
+    color: black;
+    overflow: hidden;
+    text-align: center;
+    border: black;
+  }
+
+  .btn:hover {
+    background-color: red;
+  }
+  
+  .sesamien-container {
+    width: 500px;
+    height: 530px;
+    padding: 20px;
+    background-color: #fff;
+    transition: border-color 0.3s ease; /* Animation de transition */
+    border: 2px solid black; /* Pour assurer l'espace de la bordure initialement */
+  }
+  
+  .sesamien-container:hover {
+    box-shadow: 5px 5px 20px #383838;
+  }
+
+  .sesamien-info{
+    width: 360px;
+    height: 180px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: border-color 0.3s ease; /* Animation de transition */
+    border: 2px solid black; /* Pour assurer l'espace de la bordure initialement */
+  }
+
+  .profile-picture{
+    width: 100px;
+  }
+  
+  .row-sesam {
+    display: flex;
+    flex-direction: row; /* Disposition en ligne */
+    align-items: center; /* Centrer verticalement les éléments */
+  }
+
+  .col-sesam {
+    flex: 1; /* Pour occuper l'espace disponible */
+  }
+  
+  .semestre-info{
+    width: 360px;
+    height: 120px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: border-color 0.3s ease; /* Animation de transition */
+    border: 2px solid black; /* Pour assurer l'espace de la bordure initialement */
+  }
+
+  .etat{
+    width: 180px;
+    height: 10px;
+    padding: 20px;
+    background-color: #fff;
+    transition: border-color 0.3s ease; /* Animation de transition */
+    border: 2px solid black;
+  }
+
+  .title-semestre{
+    color: red;
+    text-align: center;
+    font-size: 18px;
+  }
