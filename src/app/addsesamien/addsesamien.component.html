@@ -4,30 +4,34 @@
   <div class="login-form">
     <div class="form-group">
       <label for="uname">Nom</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="uname" class="form-control" [(ngModel)]="name" />
     </div>
     <div class="form-group">
       <label for="pword">Prenom usuel</label>
-      <input type="password" name="pword" class="form-control" />
+      <input type="text" name="firstname" class="form-control" [(ngModel)]="firstname" />
     </div>
     <div class="form-group">
       <label for="uname">Age</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="age" class="form-control" [(ngModel)]="age" />
     </div>
     <div class="form-group">
       <label for="uname">Mention</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="mention" class="form-control" [(ngModel)]="mention" />
     </div>
     <div class="form-group">
       <label for="uname">Genre</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="genre" class="form-control" [(ngModel)]="genre" />
+    </div>
+    <div class="form-group">
+      <label for="uname">Région d'origine</label>
+      <input type="text" name="region" class="form-control" [(ngModel)]="region" />
     </div>
     <div class="form-group">
       <label for="uname">Promotion</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="promotion" class="form-control" [(ngModel)]="promotion" />
     </div>
     <div class="btn-container">
-      <button class="btn btn-dark">Valider</button>
+      <button class="btn btn-dark" (click)="ajouter()">Valider</button>
     </div>
   </div>
 </div>
