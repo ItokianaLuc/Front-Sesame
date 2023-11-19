@@ -22,7 +22,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col mb-2">
+            <div *ngFor="let s of sesamien" class="col mb-2">
                 <div class="sesamien-container">
                     <div class="container">
                       <div class="row-sesam">
@@ -31,12 +31,12 @@
                         </div>
                         <div class="col-sesam">
                           <div class="sesamien-info">
-                            <div>Nom :</div>
-                            <div>Prenom usuel :</div>
-                            <div>Age :</div>
-                            <div>Mention :</div>
-                            <div>Genre :</div>
-                            <div>Promotion :</div>
+                            <div>Nom : {{s.name}}</div>
+                            <div>Prenom usuel : {{s.firstname}}</div>
+                            <div>Age : {{s.age}}</div>
+                            <div>Mention : {{s.mention}}</div>
+                            <div>Genre : {{s.genre}}</div>
+                            <div>Promotion : {{s.promotion}}</div>
                           </div>
                         </div>
                       </div>

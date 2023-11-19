@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../service/auth.service';
 import { Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
     //throw new Error('Method not implemented.');
   }
 
-  constructor(private auth:AuthService, private router : Router){
+  constructor(private auth:AuthService, private router : Router, private cookieService : CookieService){
 
   }
 
@@ -34,6 +35,7 @@ export class LoginComponent implements OnInit {
           console.log("res===>", res);
           console.log(res.status);
           if (res.email===this.username) {
+            this.cookieService.set("userData", JSON.stringify(res),30);
             this.router.navigate(['home']);
           } else {
             this.errorMsg = "Nom d'utilisateur ou mot de passe invalide";
