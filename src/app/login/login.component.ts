@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   password = "";
   errorMsg="";
 
-  login() {
+   login() {
     if (this.username.trim().length === 0) {
       this.errorMsg= "Username requis"
     }
@@ -29,13 +29,20 @@ export class LoginComponent implements OnInit {
       this.errorMsg= "Password requis"
     }else{
       this.errorMsg="";
-      let res = this.auth.login(this.username,this.password);
-      if (res===200) {
-        this.router.navigate(['home']);
-      }
-      if (res===403) {
-        this.errorMsg="Username ou Password Invalide"
-      }
+      this.auth.login(this.username, this.password).subscribe(
+        (res: any) => {
+          console.log("res===>", res);
+          console.log(res.status);
+          if (res.email===this.username) {
+            this.router.navigate(['home']);
+          } else {
+            this.errorMsg = "Nom d'utilisateur ou mot de passe invalide";
+          }
+        },
+        (error) => {
+          this.errorMsg="Erreur "+error.status
+        }
+      );
     }
   }
 }
