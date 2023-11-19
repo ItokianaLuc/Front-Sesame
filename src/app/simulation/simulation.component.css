@@ -10,12 +10,12 @@
 
 .sc-simulation .login-form {
     width: 500px;
-    height: 630px;
+    height: 940px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     position: absolute;
-    bottom: 30px;
+    bottom: -280px;
     right: 34%;
     box-shadow: 5px 5px 20px #383838;
   }

@@ -4,10 +4,10 @@
   <div class="row">
     <div class="login-form">
       <div class="form-group">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Mention</option>
-          <option value="1">Littéraire</option>
-          <option value="2">Scientifique</option>
+        <select class="form-select" aria-label="Default select example" (change)="onSelectionChange($event)">
+          <option [value]="'L'" [selected]="selectedValue === 'Littéraire'">Littéraire</option>
+          <option [value]="'S'" [selected]="selectedValue === 'Scientifique'">Scientifique</option>
+          <option [value]="'Transversale'" [selected]="selectedValue === 'Transversale'">Transvérsale</option>
         </select>
       </div>
       <div *ngFor="let object of tableauObjects" class="form-group">
@@ -16,13 +16,6 @@
       </div>
       <div class="btn-container">
         <button class="btn btn-dark">Simuler un résultat</button>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="result-form">
-      <div class="result-group">
-        <label for="uname">Résultat de la simulation</label>
       </div>
     </div>
   </div>

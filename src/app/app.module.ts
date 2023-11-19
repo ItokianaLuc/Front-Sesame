@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { AddsesamienComponent } from './addsesamien/addsesamien.component';
 import { AdduserComponent } from './adduser/adduser.component';
 import { SimulationComponent } from './simulation/simulation.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { SimulationComponent } from './simulation/simulation.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()
