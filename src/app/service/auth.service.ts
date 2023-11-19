@@ -17,7 +17,23 @@ export class AuthService {
         password: password
       }
     );
-    console.log("Response===>",response);
-    return response; 
+    console.log("Response===>", response);
+    return response;
+  }
+
+  addUser(name: string, firstname: string, identification: string, password: string, role: string, email: string, phone: string) {
+    const response = this.httpClient.post("http://127.0.0.1:5000/api/user/",
+      {
+        "name": name,
+        "firstname": firstname,
+        "identification": identification,
+        "password": password,
+        "role": role,
+        "email": email,
+        "phone": phone
+      },
+    );
+    console.log("Response===>", response);
+    return response;
   }
 }

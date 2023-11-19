@@ -4,42 +4,42 @@
   <div class="login-form">
     <div class="form-group">
       <label for="uname">Nom</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="uname" class="form-control" [(ngModel)]="name" />
     </div>
     <div class="form-group">
       <label for="pword">Prenom</label>
-      <input type="password" name="pword" class="form-control" />
+      <input type="text" name="firstname" class="form-control" [(ngModel)]="firstname" />
     </div>
     <div class="form-group">
       <label for="uname">Identification</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="identification" class="form-control" [(ngModel)]="identification" />
     </div>
     <div class="form-group">
       <label for="uname">Mot de passe</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="password" class="form-control" [(ngModel)]="password" />
     </div>
     <div class="form-group">
       <label for="uname">Rôle</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="role" class="form-control" [(ngModel)]="role" />
     </div>
     <div class="form-group">
       <label for="uname">Type de groupe en charge</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="groupe" class="form-control" [(ngModel)]="groupe" />
     </div>
     <div class="form-group">
       <label for="uname">Unité d'Enseignement en Charge</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="ue" class="form-control" [(ngModel)]="ue" />
     </div>
     <div class="form-group">
       <label for="uname">Adresse mail</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="email" class="form-control" [(ngModel)]="email" />
     </div>
     <div class="form-group">
       <label for="uname">Numero de téléphone</label>
-      <input type="text" name="uname" class="form-control" />
+      <input type="text" name="phone" class="form-control" [(ngModel)]="phone" />
     </div>
     <div class="btn-container">
-      <button class="btn btn-dark">Valider</button>
+      <button class="btn btn-dark" (click)="ajouter()" >Valider</button>
     </div>
   </div>
 </div>
